@@ -1,6 +1,6 @@
 FROM php:8.3-fpm-alpine
 
-RUN apk add --no-cache nginx sqlite-dev \
+RUN apk add --no-cache nginx sqlite-dev \\
     && docker-php-ext-install pdo pdo_sqlite
 
 WORKDIR /var/www/html
