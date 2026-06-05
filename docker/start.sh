@@ -21,6 +21,9 @@ chmod 664 database/database.sqlite
 # Run migrations (safe for SQLite)
 php artisan migrate --force
 
+# Seed the demo client if not already present
+php artisan db:seed --class=DemoSeeder --force
+
 # Create storage link if missing
 php artisan storage:link
 
