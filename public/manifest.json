@@ -1,0 +1,15 @@
+{
+  "name": "Catalog.Inc",
+  "short_name": "Catalog.Inc",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A8F3C",
+  "theme_color": "#0A8F3C",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
