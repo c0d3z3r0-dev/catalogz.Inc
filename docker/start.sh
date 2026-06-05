@@ -16,6 +16,10 @@ php artisan migrate --force
 # Create storage link if missing
 php artisan storage:link
 
-# Start PHP-FPM and Nginx
-php-fpm &
+# Start PHP-FPM in the background (listen on TCP port 9000)
+php-fpm -D -R -y /usr/local/etc/php-fpm.conf -g /var/run/php-fpm.pid
+# Wait a moment to ensure it's up
+sleep 2
+
+# Start Nginx in the foreground
 nginx -g "daemon off;"
