@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', $client->name)
 
@@ -30,7 +30,7 @@
         <div class="bg-white rounded-xl shadow p-6">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-lg font-semibold">Products ({{ $client->products->count() }})</h3>
-                <a href="{{ route('clients.products.create', $client) }}" class="bg-[#0A8F3C] text-white px-4 py-2 rounded text-sm hover:bg-green-700">+ Add Product</a>
+                <a href="{{ route('clients.products.create', $client) }}" class="bg-[#0A8F3C] text-white px-4 py-2 rounded text-sm hover:bg-[#047A2D]">+ Add Product</a>
             </div>
             @if ($client->products->isEmpty())
                 <p class="text-gray-400">No products yet.</p>
@@ -78,7 +78,7 @@
                         Copy
                     </button>
                 </div>
-                <p class="text-xs text-gray-400 mt-2">Copied link to clipboard: <span id="copy-status" class="text-green-600 hidden">Done</span></p>
+                <p class="text-xs text-gray-400 mt-2">Copied link to clipboard: <span id="copy-status" class="text-[#0A8F3C] hidden">Done</span></p>
             @else
                 <p class="text-sm text-gray-500">No merchant token generated yet. Update the client to generate one automatically.</p>
             @endif
@@ -99,3 +99,4 @@
     }
 </script>
 @endsection
+

@@ -11,9 +11,9 @@
 </head>
 <body class="p-6 max-w-3xl mx-auto">
     <nav class="mb-8">
-        <a href="/" class="text-green-600 hover:underline">&larr; Back to home</a>
+        <a href="/" class="text-[#0A8F3C] hover:underline">&larr; Back to home</a>
     </nav>
-    <div class="bg-white rounded-xl shadow-sm p-8">
+    <div class="bg-white rounded-xl shadow-card p-8">
         <h1 class="text-3xl font-bold mb-6">Privacy Policy</h1>
         <p class="mb-4 text-sm text-gray-500">Last updated: June 2026</p>
         <p class="mb-4">Catalog.Inc does not collect or store any payment information. When you place an order, we only store the order details (products, total, reference number) and the phone number you provide, which is used solely for order communication.</p>
@@ -22,6 +22,7 @@
     </div>
 </body>
 </html>
+
 
 
 

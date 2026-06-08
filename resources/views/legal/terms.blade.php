@@ -11,9 +11,9 @@
 </head>
 <body class="p-6 max-w-3xl mx-auto">
     <nav class="mb-8">
-        <a href="/" class="text-green-600 hover:underline">&larr; Back to home</a>
+        <a href="/" class="text-[#0A8F3C] hover:underline">&larr; Back to home</a>
     </nav>
-    <div class="bg-white rounded-xl shadow-sm p-8">
+    <div class="bg-white rounded-xl shadow-card p-8">
         <h1 class="text-3xl font-bold mb-6">Terms of Service</h1>
         <p class="mb-4">By using Catalog.Inc, you agree to these terms. We provide a platform that allows businesses to create product catalogs and accept EcoCash payments manually. We are not a payment processor and do not handle funds.</p>
         <p class="mb-4">Merchants are responsible for fulfilling orders and handling customer disputes. Catalog.Inc is not liable for any transaction issues between buyers and sellers.</p>
@@ -21,6 +21,7 @@
     </div>
 </body>
 </html>
+
 
 
 

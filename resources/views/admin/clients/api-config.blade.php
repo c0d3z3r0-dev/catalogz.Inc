@@ -1,11 +1,11 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'API Config – ' . $client->name)
 
 @section('page-title', 'API Configuration for ' . $client->name)
 
 @section('content')
-<div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+<div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-card border border-slate-200">
     <h3 class="text-lg font-semibold mb-4">API Access</h3>
 
     @if (session('plain_token'))
@@ -43,3 +43,4 @@
     <p class="text-xs text-slate-400 mt-2">Include the API token in the <code>Authorization: Bearer YOUR_TOKEN</code> header for requests.</p>
 </div>
 @endsection
+

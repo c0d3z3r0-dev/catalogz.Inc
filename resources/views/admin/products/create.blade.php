@@ -1,11 +1,11 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Add Product – ' . $client->name)
 
 @section('page-title', 'Add Product to ' . $client->name)
 
 @section('content')
-<div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+<div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-card border border-slate-200">
     <form method="POST" action="{{ route('clients.products.store', $client) }}" enctype="multipart/form-data">
         @csrf
         <div class="space-y-4">
@@ -48,3 +48,4 @@
     </form>
 </div>
 @endsection
+

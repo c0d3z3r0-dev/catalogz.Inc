@@ -63,7 +63,8 @@
         @keyframes slideOut { from{opacity:1;transform:translateX(0)} to{opacity:0;transform:translateX(100px)} }
         .sticky-header { position: sticky; top: 0; z-index: 10; transition: box-shadow 0.3s; }
         .sticky-header.shadowed { box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    </style>
+    .shadow-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); } .shadow-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
+</style>
 </head>
 <body class="flex h-screen overflow-hidden" id="admin-body">
     <aside id="sidebar" class="w-48 lg:w-60 bg-[#1e2a3a] text-gray-300 flex flex-col flex-shrink-0 h-screen">
@@ -76,31 +77,31 @@
             </button>
         </div>
         <nav class="flex-1 p-4 space-y-1 overflow-y-auto">
-            <a href="{{ route('dashboard') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('dashboard')?'bg-green-600 text-white':'hover:bg-gray-700 hover:text-white' }}">
+            <a href="{{ route('dashboard') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('dashboard')?'bg-[#0A8F3C] text-white':'hover:bg-gray-700 hover:text-white' }}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-4z"/></svg>
                 <span class="nav-text">Dashboard</span>
             </a>
-            <a href="{{ route('clients.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('clients.*')?'bg-green-600 text-white':'hover:bg-gray-700 hover:text-white' }}">
+            <a href="{{ route('clients.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('clients.*')?'bg-[#0A8F3C] text-white':'hover:bg-gray-700 hover:text-white' }}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                 <span class="nav-text">Clients</span>
             </a>
-            <a href="{{ route('orders.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('orders.*')?'bg-green-600 text-white':'hover:bg-gray-700 hover:text-white' }}">
+            <a href="{{ route('orders.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('orders.*')?'bg-[#0A8F3C] text-white':'hover:bg-gray-700 hover:text-white' }}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                 <span class="nav-text">Orders</span>
             </a>
             @php $unviewed = \App\Models\Submission::whereNull('viewed_at')->count(); @endphp
-            <a href="{{ route('admin.submissions.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('admin.submissions.*')?'bg-green-600 text-white':'hover:bg-gray-700 hover:text-white' }}">
+            <a href="{{ route('admin.submissions.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('admin.submissions.*')?'bg-[#0A8F3C] text-white':'hover:bg-gray-700 hover:text-white' }}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 <span class="nav-text">Submissions</span>
                 @if($unviewed > 0) <span class="notification-badge">{{ $unviewed }}</span> @endif
             </a>
-            <a href="{{ route('documentation.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('documentation.*')?'bg-green-600 text-white':'hover:bg-gray-700 hover:text-white' }}">
+            <a href="{{ route('documentation.index') }}" class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm {{ request()->routeIs('documentation.*')?'bg-[#0A8F3C] text-white':'hover:bg-gray-700 hover:text-white' }}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 <span class="nav-text">Documentation</span>
             </a>
         </nav>
         <div class="p-4 border-t border-gray-700 flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
+            <div class="w-8 h-8 rounded-full bg-[#0A8F3C] flex items-center justify-center text-white text-xs font-bold">
                 {{ strtoupper(substr(Auth::user()->name ?? 'A', 0, 1)) }}
             </div>
             <div class="flex-1 min-w-0 nav-text">
@@ -165,6 +166,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 

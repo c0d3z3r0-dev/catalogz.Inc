@@ -87,7 +87,7 @@
 </head>
 <body>
 
-    <header class="bg-[#0A8F3C] shadow-sm p-4 sticky top-0 z-30">
+    <header class="bg-[#0A8F3C] shadow-card p-4 sticky top-0 z-30">
         <div class="max-w-2xl mx-auto flex items-center justify-between">
             <h1 class="text-lg sm:text-xl font-bold text-white">{{ $order->client->name }} – Order #{{ $order->id }}</h1>
             <span class="status-badge bg-yellow-100 text-yellow-800">Pending Payment</span>
@@ -208,7 +208,7 @@
 
         {{-- Back to catalog --}}
         <p class="text-center text-sm text-gray-500 pb-8">
-            <a href="{{ route('catalog.show', $order->client->slug) }}" class="text-green-600 hover:underline">&larr; Back to {{ $order->client->name }}</a>
+            <a href="{{ route('catalog.show', $order->client->slug) }}" class="text-[#0A8F3C] hover:underline">&larr; Back to {{ $order->client->name }}</a>
         </p>
 
     </main>
@@ -242,6 +242,7 @@
     </script>
 </body>
 </html>
+
 
 
 

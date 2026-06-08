@@ -14,7 +14,7 @@
     </style>
 </head>
 <body class="bg-slate-50">
-    <header class="bg-white shadow-sm p-4">
+    <header class="bg-white shadow-card p-4">
         <h1 class="text-xl font-bold text-slate-800">Order #{{ $order->id }}</h1>
     </header>
     <main class="p-6 max-w-2xl mx-auto">
@@ -30,7 +30,7 @@
                 <p class="text-green-700">Your order has been placed successfully.</p>
             </div>
             <!-- Order summary & collection details (same as before) -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+            <div class="bg-white rounded-xl shadow-card border border-slate-200 p-6 mb-6">
                 <h3 class="font-semibold mb-4">Order Summary</h3>
                 <table class="w-full overflow-x-auto" class="w-full text-sm">
                     <thead class="bg-slate-50"><tr><th class="p-2 text-left">Item</th><th class="p-2 text-right">Qty</th><th class="p-2 text-right">Price</th><th class="p-2 text-right">Total</th></tr></thead>
@@ -43,7 +43,7 @@
                 <p class="text-xl font-bold text-right mt-2">Total: ${{ number_format($order->total, 2) }} ({{ $order->currency }})</p>
             </div>
             @php $client = $order->client; @endphp
-            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+            <div class="bg-white rounded-xl shadow-card border border-slate-200 p-6">
                 <h3 class="font-semibold mb-4">Collection Details</h3>
                 <div class="space-y-2 text-slate-700">
                     <p><span class="font-medium">Business:</span> {{ $client->name }}</p>
@@ -55,7 +55,7 @@
                 @if ($client->whatsapp_number)
                 <div class="mt-4">
                     <a href="https://wa.me/{{ $client->whatsapp_number }}?text=Regarding%20order%20%23{{ $order->id }}" target="_blank"
-                       class="inline-block bg-green-600 text-white px-5 py-2 rounded-xl hover:bg-green-700 transition text-sm">Contact via WhatsApp</a>
+                       class="inline-block bg-[#0A8F3C] text-white px-5 py-2 rounded-xl hover:bg-[#047A2D] transition text-sm">Contact via WhatsApp</a>
                 </div>
                 @endif
             </div>
@@ -88,6 +88,7 @@
     </script>
 </body>
 </html>
+
 
 
 

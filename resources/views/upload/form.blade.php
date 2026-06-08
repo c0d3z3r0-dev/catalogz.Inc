@@ -20,11 +20,12 @@
                 <label class="block text-sm font-medium text-slate-700 mb-2">Select Photos</label>
                 <input type="file" name="photos[]" multiple accept="image/*" class="w-full text-sm file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-medium file:bg-green-50 file:text-green-700 hover:file:bg-green-100">
             </div>
-            <button type="submit" class="bg-green-600 text-white px-5 py-2 rounded-xl hover:bg-green-700">Upload</button>
+            <button type="submit" class="bg-[#0A8F3C] text-white px-5 py-2 rounded-xl hover:bg-[#047A2D]">Upload</button>
         </form>
     </div>
 </body>
 </html>
+
 
 
 

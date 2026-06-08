@@ -1,11 +1,11 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Edit Product – ' . $client->name)
 
 @section('page-title', 'Edit Product')
 
 @section('content')
-<div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+<div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-card border border-slate-200">
     <form method="POST" action="{{ route('clients.products.update', [$client, $product]) }}" enctype="multipart/form-data">
         @csrf @method('PUT')
         <div class="space-y-4">
@@ -53,10 +53,11 @@
         </div>
         <div class="mt-6 flex items-center justify-end space-x-3">
             <a href="{{ route('clients.products.index', $client) }}" class="px-4 py-2 border border-slate-300 rounded-xl text-slate-700 hover:bg-slate-50 text-sm">Cancel</a>
-            <button type="submit" class="px-5 py-2 bg-[#0A8F3C] text-white rounded-xl hover:bg-green-700 transition text-sm font-medium">
+            <button type="submit" class="px-5 py-2 bg-[#0A8F3C] text-white rounded-xl hover:bg-[#047A2D] transition text-sm font-medium">
                 Update Product
             </button>
         </div>
     </form>
 </div>
 @endsection
+

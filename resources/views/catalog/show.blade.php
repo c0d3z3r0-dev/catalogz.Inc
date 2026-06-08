@@ -220,7 +220,8 @@
             grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
             gap: clamp(12px, 2vw, 24px);
         }
-    </style>
+    .shadow-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); } .shadow-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
+</style>
 </head>
 <body class="antialiased">
 
@@ -330,7 +331,7 @@
             </div>
             <h3 id="modal-name" class="text-lg sm:text-xl font-bold"></h3>
             <p id="modal-description" class="text-gray-600 my-2 text-sm sm:text-base"></p>
-            <p id="modal-price" class="text-xl sm:text-2xl font-bold text-green-600 mb-4"></p>
+            <p id="modal-price" class="text-xl sm:text-2xl font-bold text-[#0A8F3C] mb-4"></p>
             <form method="POST" action="{{ route('catalog.cart.add', $client->slug) }}" class="flex gap-2">
                 @csrf
                 <input type="hidden" name="product_id" id="modal-product-id">
@@ -397,6 +398,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 

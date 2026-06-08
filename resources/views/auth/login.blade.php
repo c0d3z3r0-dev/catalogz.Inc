@@ -15,10 +15,10 @@
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 w-full max-w-sm">
+    <div class="bg-white p-8 rounded-xl shadow-card border border-gray-100 w-full max-w-sm">
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold">
-                <span class="text-gray-900">Catalog.</span><span class="text-green-600">Inc</span>
+                <span class="text-gray-900">Catalog.</span><span class="text-[#0A8F3C]">Inc</span>
             </h1>
             <p class="text-gray-500 text-sm mt-1">Admin Panel</p>
         </div>
@@ -42,13 +42,14 @@
                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
             </div>
             <button type="submit"
-                    class="w-full bg-green-600 text-white py-2.5 rounded-xl hover:bg-green-700 transition font-medium text-sm">
+                    class="w-full bg-[#0A8F3C] text-white py-2.5 rounded-xl hover:bg-[#047A2D] transition font-medium text-sm">
                 Sign In
             </button>
         </form>
     </div>
 </body>
 </html>
+
 
 
 

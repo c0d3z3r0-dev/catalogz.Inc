@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="bg-white p-6 rounded-xl shadow-sm border col-span-2">
+    <div class="bg-white p-6 rounded-xl shadow-card border col-span-2">
         <h3 class="font-semibold mb-4">Items</h3>
         <table class="w-full overflow-x-auto" class="w-full text-sm">
             <thead class="bg-slate-50">
@@ -25,7 +25,7 @@
         </table>
         <p class="text-xl font-bold text-right mt-4">Total: ${{ number_format($order->total,2) }} ({{ $order->currency }})</p>
     </div>
-    <div class="bg-white p-6 rounded-xl shadow-sm border">
+    <div class="bg-white p-6 rounded-xl shadow-card border">
         <h3 class="font-semibold mb-4">Order Details</h3>
         <p><span class="text-slate-500">Customer:</span> {{ $order->customer_phone }}</p>
         <p><span class="text-slate-500">Status:</span> 
@@ -60,4 +60,5 @@
     </div>
 </div>
 @endsection
+
 

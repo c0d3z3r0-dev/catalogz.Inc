@@ -25,7 +25,7 @@
         @endif
 
         @forelse ($orders as $order)
-        <div class="bg-white rounded-xl shadow-sm p-4 mb-4">
+        <div class="bg-white rounded-xl shadow-card p-4 mb-4">
             <div class="flex justify-between items-start">
                 <div>
                     <p class="font-semibold">Order #{{ $order->id }}</p>
@@ -59,6 +59,7 @@
     </main>
 </body>
 </html>
+
 
 
 

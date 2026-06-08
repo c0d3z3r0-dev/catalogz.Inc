@@ -145,7 +145,7 @@
 
             <!-- Step 1: Business Details -->
             <div class="form-step active" id="step1">
-                <div class="bg-white p-6 rounded-xl shadow-sm space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-card space-y-4">
                     <h2 class="font-semibold text-lg text-gray-800">Business Details</h2>
                     <div class="floating-label">
                         <input type="text" name="business_name" id="biz_name" placeholder=" " required>
@@ -175,7 +175,7 @@
 
             <!-- Step 2: Products -->
             <div class="form-step" id="step2">
-                <div class="bg-white p-6 rounded-xl shadow-sm space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-card space-y-4">
                     <h2 class="font-semibold text-lg text-gray-800">Your Products</h2>
                     <p class="text-sm text-gray-500">Add up to 5 products. Upload a photo, name, and price for each.</p>
                     <div id="product-list" class="space-y-4">
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="add-product" class="text-sm text-green-600 hover:underline">+ Add another product</button>
+                    <button type="button" id="add-product" class="text-sm text-[#0A8F3C] hover:underline">+ Add another product</button>
                     <div class="flex justify-between">
                         <button type="button" class="btn-secondary" onclick="prevStep(1)">Back</button>
                         <button type="button" class="btn-primary" onclick="nextStep(3)">Next: Review</button>
@@ -204,7 +204,7 @@
 
             <!-- Step 3: Review & Submit -->
             <div class="form-step" id="step3">
-                <div class="bg-white p-6 rounded-xl shadow-sm space-y-4 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-card space-y-4 text-center">
                     <div class="text-5xl mb-3">&#10003;</div>
                     <h2 class="font-semibold text-lg text-gray-800">Ready to submit?</h2>
                     <p class="text-sm text-gray-500">We'll create your catalog within 2 business hours. You'll be able to send us a WhatsApp message to confirm.</p>
@@ -266,6 +266,7 @@
     </script>
 </body>
 </html>
+
 
 
 

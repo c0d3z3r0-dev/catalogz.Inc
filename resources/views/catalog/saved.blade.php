@@ -8,7 +8,7 @@
     
 </head>
 <body class="bg-slate-50">
-    <header class="bg-white shadow-sm p-4 flex items-center">
+    <header class="bg-white shadow-card p-4 flex items-center">
         <a href="{{ route('catalog.show', $client->slug) }}" class="text-blue-600 hover:underline">&larr; Back to store</a>
         <h1 class="text-xl font-bold ml-4">Saved Items</h1>
     </header>
@@ -37,7 +37,7 @@
                             @csrf
                             <input type="hidden" name="product_id" value="${item.id}">
                             <input type="hidden" name="quantity" value="1">
-                            <button class="text-sm bg-green-600 text-white px-3 py-1 rounded">Move to Basket</button>
+                            <button class="text-sm bg-[#0A8F3C] text-white px-3 py-1 rounded">Move to Basket</button>
                         </form>
                         <button onclick="removeSaved(${item.id})" class="text-sm text-red-600 ml-2">Remove</button>
                     </div>`;
@@ -53,6 +53,7 @@
     </script>
 </body>
 </html>
+
 
 
 

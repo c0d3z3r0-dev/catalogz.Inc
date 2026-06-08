@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <header class="top-bar shadow-sm p-4">
+    <header class="top-bar shadow-card p-4">
         <div class="max-w-2xl mx-auto flex items-center gap-3">
             <a href="{{ route('catalog.cart', $client->slug) }}" class="text-white/80 hover:text-white">&larr; Back to Basket</a>
             <h1 class="text-xl font-bold text-white">{{ $client->name }} – Checkout</h1>
@@ -89,10 +89,10 @@
                 </div>
             </div>
             <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 flex items-start gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#0A8F3C] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                 <div>
                     <p class="text-sm font-medium text-green-800">Secure payment via EcoCash</p>
-                    <p class="text-xs text-green-600 mt-1">You'll receive a USSD prompt on your phone. We never see your PIN.</p>
+                    <p class="text-xs text-[#0A8F3C] mt-1">You'll receive a USSD prompt on your phone. We never see your PIN.</p>
                 </div>
             </div>
             <button type="submit" class="btn-dark-green" id="pay-btn">
@@ -121,6 +121,7 @@
     </script>
 </body>
 </html>
+
 
 
 

@@ -28,7 +28,7 @@
     </style>
 </head>
 <body>
-    <header class="top-bar shadow-sm p-4 sticky top-0 z-30">
+    <header class="top-bar shadow-card p-4 sticky top-0 z-30">
         <div class="max-w-3xl mx-auto flex items-center justify-between">
             <h1 class="text-lg sm:text-xl font-bold text-white">
                 Basket <span class="text-white/70 text-sm font-normal">({{ count($items) }} item{{ count($items) !== 1 ? 's' : '' }})</span>
@@ -44,7 +44,7 @@
             <div class="text-center py-16">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                 <p class="text-gray-500 text-lg mb-4">Your basket is empty</p>
-                <a href="{{ route('catalog.show', $client->slug) }}" class="text-green-600 hover:underline font-medium">Start shopping</a>
+                <a href="{{ route('catalog.show', $client->slug) }}" class="text-[#0A8F3C] hover:underline font-medium">Start shopping</a>
             </div>
         @else
             <form method="POST" action="{{ route('catalog.cart.update', $client->slug) }}" id="cart-form">
@@ -147,6 +147,7 @@
     </script>
 </body>
 </html>
+
 
 
 

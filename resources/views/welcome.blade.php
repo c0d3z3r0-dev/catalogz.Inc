@@ -92,7 +92,7 @@
 <body class="antialiased">
 
     <!-- Nav -->
-    <nav class="bg-[#1e2a3a] shadow-md sticky top-0 z-30">
+    <nav class="bg-[#1e2a3a] shadow-card sticky top-0 z-30">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-2xl font-bold tracking-tight">
                 <span class="text-white">Catalog.</span><span class="text-green-400">Inc</span>
@@ -108,7 +108,7 @@
         <div class="absolute bottom-20 right-10 w-32 h-32 bg-green-300 rounded-full opacity-20 blur-xl hidden md:block"></div>
 
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
-            Turn your <span id="typewriter-text" class="text-green-600">WhatsApp</span> into a beautiful online store
+            Turn your <span id="typewriter-text" class="text-[#0A8F3C]">WhatsApp</span> into a beautiful online store
         </h1>
         <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             Accept EcoCash payments instantly. No website needed. We build it for you.
@@ -126,36 +126,36 @@
         <div class="carousel-wrapper" id="carousel-wrapper">
             <div class="carousel-track" id="carousel-track">
                 <div class="carousel-card">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center h-full border border-gray-100">
-                        <div class="text-4xl mb-4 text-green-600 font-bold">1.</div>
+                    <div class="bg-white p-8 rounded-2xl shadow-card text-center h-full border border-gray-100">
+                        <div class="text-4xl mb-4 text-[#0A8F3C] font-bold">1.</div>
                         <h3 class="font-semibold text-xl mb-3">Apply with your products</h3>
                         <p class="text-gray-600 leading-relaxed">Fill a simple form with your business name, products, and photos.</p>
                     </div>
                 </div>
                 <div class="carousel-card">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center h-full border border-gray-100">
-                        <div class="text-4xl mb-4 text-green-600 font-bold">2.</div>
+                    <div class="bg-white p-8 rounded-2xl shadow-card text-center h-full border border-gray-100">
+                        <div class="text-4xl mb-4 text-[#0A8F3C] font-bold">2.</div>
                         <h3 class="font-semibold text-xl mb-3">We build your catalog</h3>
                         <p class="text-gray-600 leading-relaxed">We create a beautiful catalog with EcoCash checkout just for you.</p>
                     </div>
                 </div>
                 <div class="carousel-card">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center h-full border border-gray-100">
-                        <div class="text-4xl mb-4 text-green-600 font-bold">3.</div>
+                    <div class="bg-white p-8 rounded-2xl shadow-card text-center h-full border border-gray-100">
+                        <div class="text-4xl mb-4 text-[#0A8F3C] font-bold">3.</div>
                         <h3 class="font-semibold text-xl mb-3">Share & get paid</h3>
                         <p class="text-gray-600 leading-relaxed">Share your catalog link on WhatsApp and receive payments instantly.</p>
                     </div>
                 </div>
                 <div class="carousel-card">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center h-full border border-gray-100">
-                        <div class="text-4xl mb-4 text-green-600 font-bold">1.</div>
+                    <div class="bg-white p-8 rounded-2xl shadow-card text-center h-full border border-gray-100">
+                        <div class="text-4xl mb-4 text-[#0A8F3C] font-bold">1.</div>
                         <h3 class="font-semibold text-xl mb-3">Apply with your products</h3>
                         <p class="text-gray-600 leading-relaxed">Fill a simple form with your business name, products, and photos.</p>
                     </div>
                 </div>
                 <div class="carousel-card">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm text-center h-full border border-gray-100">
-                        <div class="text-4xl mb-4 text-green-600 font-bold">2.</div>
+                    <div class="bg-white p-8 rounded-2xl shadow-card text-center h-full border border-gray-100">
+                        <div class="text-4xl mb-4 text-[#0A8F3C] font-bold">2.</div>
                         <h3 class="font-semibold text-xl mb-3">We build your catalog</h3>
                         <p class="text-gray-600 leading-relaxed">We create a beautiful catalog with EcoCash checkout just for you.</p>
                     </div>
@@ -173,7 +173,7 @@
     <section class="max-w-5xl mx-auto px-6 py-12 md:py-16">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">What our clients say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-gray-100">
+            <div class="bg-white p-8 rounded-2xl shadow-card text-center border border-gray-100">
                 <div class="flex justify-center mb-4">
                     <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-2xl">T</div>
                 </div>
@@ -184,7 +184,7 @@
                 <p class="font-semibold text-lg">Tinashe</p>
                 <p class="text-sm text-gray-400">Harare</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-gray-100">
+            <div class="bg-white p-8 rounded-2xl shadow-card text-center border border-gray-100">
                 <div class="flex justify-center mb-4">
                     <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-2xl">R</div>
                 </div>
@@ -195,7 +195,7 @@
                 <p class="font-semibold text-lg">Rumbi</p>
                 <p class="text-sm text-gray-400">Bulawayo</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-gray-100">
+            <div class="bg-white p-8 rounded-2xl shadow-card text-center border border-gray-100">
                 <div class="flex justify-center mb-4">
                     <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-2xl">F</div>
                 </div>
@@ -213,32 +213,32 @@
     <section class="max-w-3xl mx-auto px-6 py-12 md:py-16">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently asked questions</h2>
         <div class="space-y-4">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 faq-item">
+            <div class="bg-white rounded-2xl shadow-card border border-gray-100 faq-item">
                 <button class="faq-toggle w-full text-left px-6 py-5 font-semibold flex justify-between items-center text-lg" data-target="faq0">
-                    How long does it take to get my catalog? <span class="text-green-600 transform transition-transform duration-300 text-2xl">+</span>
+                    How long does it take to get my catalog? <span class="text-[#0A8F3C] transform transition-transform duration-300 text-2xl">+</span>
                 </button>
                 <div id="faq0" class="faq-answer px-6 text-gray-600">
                     <p class="pb-5 leading-relaxed">We usually deliver your catalog within 2 business hours after you submit your products.</p>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 faq-item">
+            <div class="bg-white rounded-2xl shadow-card border border-gray-100 faq-item">
                 <button class="faq-toggle w-full text-left px-6 py-5 font-semibold flex justify-between items-center text-lg" data-target="faq1">
-                    Can I update my catalog later? <span class="text-green-600 transform transition-transform duration-300 text-2xl">+</span>
+                    Can I update my catalog later? <span class="text-[#0A8F3C] transform transition-transform duration-300 text-2xl">+</span>
                 </button>
                 <div id="faq1" class="faq-answer px-6 text-gray-600">
                     <p class="pb-5 leading-relaxed">Yes. Just send us your new products or changes via WhatsApp and we update it for free.</p>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 faq-item">
+            <div class="bg-white rounded-2xl shadow-card border border-gray-100 faq-item">
                 <button class="faq-toggle w-full text-left px-6 py-5 font-semibold flex justify-between items-center text-lg" data-target="faq2">
-                    How do I receive payments? <span class="text-green-600 transform transition-transform duration-300 text-2xl">+</span>
+                    How do I receive payments? <span class="text-[#0A8F3C] transform transition-transform duration-300 text-2xl">+</span>
                 </button>
                 <div id="faq2" class="faq-answer px-6 text-gray-600">
                     <p class="pb-5 leading-relaxed">Customers pay directly to your EcoCash number. The catalog shows your number and order reference. You confirm payment manually.</p>
                 </div>
             </div>
         </div>
-        <p class="text-center mt-8 text-sm text-gray-500">Still have questions? <a href="https://wa.me/263715670833" class="text-green-600 font-medium hover:underline">Chat with us on WhatsApp</a></p>
+        <p class="text-center mt-8 text-sm text-gray-500">Still have questions? <a href="https://wa.me/263715670833" class="text-[#0A8F3C] font-medium hover:underline">Chat with us on WhatsApp</a></p>
     </section>
 
     <!-- Newsletter -->
@@ -255,9 +255,9 @@
     <footer class="text-center py-8 text-gray-400 text-sm border-t">
         <p>&copy; {{ date('Y') }} Catalog.Inc. All rights reserved.</p>
         <p class="mt-2">
-            <a href="https://wa.me/263715670833" class="text-green-600 hover:underline">Contact us</a> &middot;
-            <a href="/privacy" class="text-green-600 hover:underline">Privacy</a> &middot;
-            <a href="/terms" class="text-green-600 hover:underline">Terms</a>
+            <a href="https://wa.me/263715670833" class="text-[#0A8F3C] hover:underline">Contact us</a> &middot;
+            <a href="/privacy" class="text-[#0A8F3C] hover:underline">Privacy</a> &middot;
+            <a href="/terms" class="text-[#0A8F3C] hover:underline">Terms</a>
         </p>
     </footer>
 
@@ -278,7 +278,7 @@
 
         // Typewriter effect with colors (Instagram = red)
         const words = [
-            { text: 'WhatsApp', color: 'text-green-600' },
+            { text: 'WhatsApp', color: 'text-[#0A8F3C]' },
             { text: 'Facebook', color: 'text-blue-600' },
             { text: 'Instagram', color: 'text-red-600' }
         ];
@@ -359,6 +359,7 @@
     </script>
 </body>
 </html>
+
 
 
 

@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Products – ' . $client->name)
 
@@ -7,7 +7,7 @@
 @section('content')
 <div class="flex justify-between items-center mb-6">
     <a href="{{ route('clients.show', $client) }}" class="text-sm text-blue-600 hover:underline">&larr; Back to client</a>
-    <a href="{{ route('clients.products.create', $client) }}" class="inline-flex items-center px-4 py-2 bg-[#0A8F3C] text-white rounded-xl hover:bg-green-700 transition text-sm font-medium">
+    <a href="{{ route('clients.products.create', $client) }}" class="inline-flex items-center px-4 py-2 bg-[#0A8F3C] text-white rounded-xl hover:bg-[#047A2D] transition text-sm font-medium">
         + Add Product
     </a>
 </div>
@@ -19,7 +19,7 @@
 @endif
 
 {{-- Bulk Upload --}}
-<div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+<div class="bg-white rounded-xl shadow-card p-6 mb-6">
     <h3 class="font-semibold text-lg mb-2">Bulk Add Products</h3>
     <p class="text-sm text-gray-500 mb-3">Paste tab‑delimited data: <strong>Name</strong> &rarr; <strong>Price</strong> &rarr; <strong>Description</strong> (one per line).</p>
     <form method="POST" action="{{ route('clients.products.bulk', $client) }}" class="space-y-3">
@@ -37,7 +37,7 @@
             $imgUrl = Str::startsWith($product->image_path, 'http') ? $product->image_path : secure_asset('storage/' . $product->image_path);
         }
     @endphp
-    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+    <div class="bg-white rounded-xl shadow-card border border-slate-200 overflow-hidden hover:shadow-card transition">
         <div class="image-container">
             @if ($imgUrl)
                 <img src="{{ $imgUrl }}" alt="{{ $product->name }}" class="product-image">
@@ -71,3 +71,4 @@
     @endforelse
 </div>
 @endsection
+
