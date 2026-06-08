@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $product->name }} - {{ $client->name }} - Catalog.Inc</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4 flex justify-between items-center">
@@ -27,3 +27,4 @@
     </div>
 </body>
 </html>
+
