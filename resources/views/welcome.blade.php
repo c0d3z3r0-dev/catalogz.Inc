@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog.Inc – Catalogs that bring money</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
@@ -330,4 +330,5 @@
     </script>
 </body>
 </html>
+
 
