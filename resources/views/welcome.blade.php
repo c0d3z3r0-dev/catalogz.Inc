@@ -98,7 +98,7 @@
     </nav>
 
     <!-- Hero -->
-    <section class="max-w-5xl mx-auto px-6 py-20 md:py-32 text-center relative">
+    <section class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center relative">
         <!-- Floating illustration (lightweight CSS shape) -->
         <div class="absolute top-10 left-10 w-24 h-24 bg-green-200 rounded-full opacity-20 blur-xl hidden md:block"></div>
         <div class="absolute bottom-20 right-10 w-32 h-32 bg-green-300 rounded-full opacity-20 blur-xl hidden md:block"></div>
@@ -117,8 +117,8 @@
     </section>
 
     <!-- How it works – Carousel -->
-    <section class="py-20 md:py-28">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">How it works</h2>
+    <section class="py-12 md:py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">How it works</h2>
         <div class="carousel-wrapper" id="carousel-wrapper">
             <div class="carousel-track" id="carousel-track">
                 <div class="carousel-card">
@@ -166,8 +166,8 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="max-w-5xl mx-auto px-6 py-20 md:py-28">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">What our clients say</h2>
+    <section class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">What our clients say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-gray-100">
                 <div class="flex justify-center mb-4">
@@ -206,8 +206,8 @@
     </section>
 
     <!-- FAQ -->
-    <section class="max-w-3xl mx-auto px-6 py-20 md:py-28">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">Frequently asked questions</h2>
+    <section class="max-w-3xl mx-auto px-6 py-12 md:py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently asked questions</h2>
         <div class="space-y-4">
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 faq-item">
                 <button class="faq-toggle w-full text-left px-6 py-5 font-semibold flex justify-between items-center text-lg" data-target="faq0">
@@ -238,7 +238,7 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="max-w-xl mx-auto px-6 py-16 text-center">
+    <section class="max-w-xl mx-auto px-6 py-12 text-center">
         <h3 class="text-2xl font-semibold mb-3">Not ready to apply?</h3>
         <p class="text-gray-500 mb-6">Leave your email and we'll send you more information.</p>
         <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Thanks! We will be in touch.'); this.reset();">
@@ -248,7 +248,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-10 text-gray-400 text-sm border-t">
+    <footer class="text-center py-8 text-gray-400 text-sm border-t">
         <p>&copy; {{ date('Y') }} Catalog.Inc. All rights reserved.</p>
         <p class="mt-2">
             <a href="https://wa.me/263715670833" class="text-green-600 hover:underline">Contact us</a> &middot;
@@ -272,11 +272,11 @@
         const btt = document.getElementById('btt');
         window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 300));
 
-        // Typewriter effect with colors
+        // Typewriter effect with colors (Instagram = red)
         const words = [
             { text: 'WhatsApp', color: 'text-green-600' },
             { text: 'Facebook', color: 'text-blue-600' },
-            { text: 'Instagram', color: 'text-pink-500' }
+            { text: 'Instagram', color: 'text-red-600' }
         ];
         let wordIndex = 0;
         const typewriter = document.getElementById('typewriter-text');
