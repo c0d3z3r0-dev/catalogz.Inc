@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" href="/css/tailwind.min.css" as="style">
-    <link rel="preload" href="/css/aos.css" as="style">
-    <link rel="preload" href="/js/aos.js" as="script">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $client->name }} - Catalog.Inc</title>
@@ -15,8 +16,8 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/tailwind.min.css">
-    <link rel="stylesheet" href="/css/aos.css">
+    
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     @php
         $font = $client->font_family ?: 'Inter';
@@ -354,7 +355,7 @@
         </div>
     </div>
 
-    <script src="/js/aos.js"></script>
+    
     <script>
         AOS.init({ once: true });
         const modal = document.getElementById('quick-view-modal');
@@ -396,6 +397,7 @@
     </script>
 </body>
 </html>
+
 
 
 

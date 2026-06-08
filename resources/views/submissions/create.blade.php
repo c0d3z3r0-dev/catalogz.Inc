@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply for a Catalog – Catalog.Inc</title>
-    <link rel="stylesheet" href="/css/tailwind.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; }
@@ -265,6 +266,7 @@
     </script>
 </body>
 </html>
+
 
 
 
