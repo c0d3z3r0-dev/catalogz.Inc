@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
     <main class="max-w-2xl mx-auto px-4 py-8">
         <div class="card-float p-6 mb-6">
             <h2 class="font-semibold text-lg mb-4">Order Summary</h2>
-            <table class="w-full text-sm">
+            <table class="w-full overflow-x-auto" class="w-full text-sm">
                 @foreach ($items as $item)
                 <tr class="border-b last:border-0">
                     <td class="py-3 flex items-center gap-3">
@@ -39,7 +39,7 @@
                                 $imgUrl = $img ? (Str::startsWith($img, 'http') ? $img : secure_asset('storage/' . $img)) : null;
                             @endphp
                             @if ($imgUrl)
-                                <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-lg">
+                                <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-lg max-w-full">
                             @endif
                         </div>
                         <div>
@@ -120,3 +120,5 @@
     </script>
 </body>
 </html>
+
+

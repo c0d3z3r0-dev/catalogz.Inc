@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
             <form method="POST" action="{{ route('catalog.cart.update', $client->slug) }}" id="cart-form">
                 @csrf
                 <div class="card-float overflow-hidden mb-6">
-                    <table class="w-full cart-table">
+                    <table class="w-full overflow-x-auto" class="w-full cart-table">
                         <thead class="bg-gray-50 text-left text-sm text-gray-500 hidden sm:table-header-group">
                             <tr><th class="p-4">Product</th><th class="p-4 text-center">Qty</th><th class="p-4 text-right">Total</th><th></th></tr>
                         </thead>
@@ -64,7 +64,7 @@
                                                 $imgUrl = $img ? (Str::startsWith($img, 'http') ? $img : secure_asset('storage/' . $img)) : null;
                                             @endphp
                                             @if ($imgUrl)
-                                                <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-xl">
+                                                <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-xl max-w-full">
                                             @endif
                                         </div>
                                         <div>
@@ -146,3 +146,5 @@
     </script>
 </body>
 </html>
+
+

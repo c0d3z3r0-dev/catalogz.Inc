@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Order #'.$order->id)
 
@@ -8,7 +8,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div class="bg-white p-6 rounded-xl shadow-sm border col-span-2">
         <h3 class="font-semibold mb-4">Items</h3>
-        <table class="w-full text-sm">
+        <table class="w-full overflow-x-auto" class="w-full text-sm">
             <thead class="bg-slate-50">
                 <tr><th class="p-2 text-left">Product</th><th class="p-2 text-right">Qty</th><th class="p-2 text-right">Price</th><th class="p-2 text-right">Total</th></tr>
             </thead>
@@ -60,3 +60,4 @@
     </div>
 </div>
 @endsection
+

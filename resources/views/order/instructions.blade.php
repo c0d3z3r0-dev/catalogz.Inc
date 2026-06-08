@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -107,7 +107,7 @@
                     @endphp
                     <div class="w-12 h-12 bg-gray-200 rounded-lg flex-shrink-0">
                         @if ($imgUrl)
-                            <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-lg">
+                            <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-lg max-w-full">
                         @endif
                     </div>
                     <div class="flex-1">
@@ -241,3 +241,4 @@
     </script>
 </body>
 </html>
+

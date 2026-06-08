@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -322,7 +322,7 @@
         <div class="modal-content relative">
             <button id="close-modal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl leading-none">&times;</button>
             <div class="image-container rounded-lg mb-4">
-                <img id="modal-image" src="" class="product-image" alt="">
+                <img id="modal-image" src="" class="product-image max-w-full" alt="">
             </div>
             <h3 id="modal-name" class="text-lg sm:text-xl font-bold"></h3>
             <p id="modal-description" class="text-gray-600 my-2 text-sm sm:text-base"></p>
@@ -393,3 +393,4 @@
     </script>
 </body>
 </html>
+

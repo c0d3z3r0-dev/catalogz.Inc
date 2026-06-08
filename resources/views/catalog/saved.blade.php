@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
                 div.className = 'bg-white p-4 rounded shadow flex items-center gap-4';
                 div.innerHTML = `
                     <div class="w-20 h-20 bg-slate-200 rounded flex-shrink-0">
-                        ${item.image ? `<img src="${item.image}" class="h-full w-full object-cover rounded">` : '<div class="h-full w-full flex items-center justify-center text-slate-400">No img</div>'}
+                        ${item.image ? `<img src="${item.image}" class="h-full w-full object-cover rounded max-w-full">` : '<div class="h-full w-full flex items-center justify-center text-slate-400">No img</div>'}
                     </div>
                     <div class="flex-1">
                         <h3 class="font-semibold">${item.name}</h3>
@@ -52,3 +52,4 @@
     </script>
 </body>
 </html>
+

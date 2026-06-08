@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Clients')
 @section('page-title', 'Clients')
@@ -22,7 +22,7 @@
 </div>
 
 <div class="card-float overflow-hidden">
-    <table class="w-full" id="clientsTable">
+    <table class="w-full overflow-x-auto" class="w-full" id="clientsTable">
         <thead class="bg-slate-50">
             <tr>
                 <th class="p-3 text-left"><input type="checkbox" id="select-all" onchange="toggleAll(this)"></th>
@@ -137,3 +137,4 @@
     }
 </script>
 @endsection
+

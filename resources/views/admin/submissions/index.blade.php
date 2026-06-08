@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Submissions')
 
@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="card-float p-4 overflow-hidden">
-    <table class="w-full">
+    <table class="w-full overflow-x-auto" class="w-full">
         <thead class="bg-gray-50">
             <tr>
                 <th class="p-3 text-left text-sm font-semibold text-gray-600">Business</th>
@@ -36,3 +36,4 @@
     {{ $submissions->links() }}
 </div>
 @endsection
+

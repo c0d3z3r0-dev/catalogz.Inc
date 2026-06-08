@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Orders')
 
@@ -20,7 +20,7 @@
 </div>
 
 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-    <table class="w-full">
+    <table class="w-full overflow-x-auto" class="w-full">
         <thead class="bg-slate-50">
             <tr>
                 <th class="p-3 text-left">Order #</th>
@@ -75,3 +75,4 @@
     </div>
 </div>
 @endsection
+

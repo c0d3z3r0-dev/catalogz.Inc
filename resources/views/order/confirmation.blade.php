@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
             <!-- Order summary & collection details (same as before) -->
             <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
                 <h3 class="font-semibold mb-4">Order Summary</h3>
-                <table class="w-full text-sm">
+                <table class="w-full overflow-x-auto" class="w-full text-sm">
                     <thead class="bg-slate-50"><tr><th class="p-2 text-left">Item</th><th class="p-2 text-right">Qty</th><th class="p-2 text-right">Price</th><th class="p-2 text-right">Total</th></tr></thead>
                     <tbody>
                         @foreach ($order->items as $item)
@@ -87,3 +87,4 @@
     </script>
 </body>
 </html>
+
