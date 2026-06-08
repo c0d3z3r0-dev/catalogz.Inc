@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Photos – {{ $client->name }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
 </head>
 <body class="bg-slate-50 p-8">
     <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow">
@@ -24,5 +24,6 @@
     </div>
 </body>
 </html>
+
 
 
