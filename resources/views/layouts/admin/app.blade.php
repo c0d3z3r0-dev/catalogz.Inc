@@ -64,6 +64,7 @@
         .sticky-header { position: sticky; top: 0; z-index: 10; transition: box-shadow 0.3s; }
         .sticky-header.shadowed { box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
     .shadow-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); } .shadow-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
+input:focus, select:focus, textarea:focus, button:focus { outline: none; ring: 2px solid #0A8F3C; border-color: transparent; }
 </style>
 </head>
 <body class="flex h-screen overflow-hidden" id="admin-body">
@@ -166,6 +167,7 @@
     </script>
 </body>
 </html>
+
 
 
 

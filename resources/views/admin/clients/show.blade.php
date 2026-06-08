@@ -10,7 +10,7 @@
         <div class="flex flex-col items-center text-center">
             <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
                 @if ($client->logo_path)
-                    <img src="{{ Str::startsWith($client->logo_path, 'http') ? $client->logo_path : secure_asset('storage/' . $client->logo_path) }}" alt="{{ $client->name }}" class="h-full w-full object-cover rounded-full">
+                    <img alt="" ->logo_path, 'http') ? $client->logo_path : secure_asset('storage/' . $client->logo_path) }}" alt="{{ $client->name }}" class="h-full w-full object-cover rounded-full">
                 @else
                     <span class="text-4xl text-gray-400">{{ substr($client->name, 0, 1) }}</span>
                 @endif
@@ -99,4 +99,5 @@
     }
 </script>
 @endsection
+
 

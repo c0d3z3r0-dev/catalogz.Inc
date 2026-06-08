@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Submission Detail')
 
@@ -20,7 +20,7 @@
             <div class="flex items-start gap-4 mb-4 border-b pb-3">
                 <div class="w-16 h-16 bg-gray-200 rounded flex-shrink-0">
                     @if ($product->image_path)
-                        <img src="{{ asset('storage/' . $product->image_path) }}" class="h-full w-full object-cover rounded">
+                        <img alt="" ->image_path) }}" class="h-full w-full object-cover rounded">
                     @endif
                 </div>
                 <div>
@@ -37,3 +37,4 @@
     <a href="{{ route('clients.create', ['name' => $submission->business_name, 'whatsapp' => $submission->whatsapp_number, 'email' => $submission->email, 'address' => $submission->address, 'city' => $submission->city]) }}" class="btn-dark-green px-4 py-2">Create Catalog from this Submission</a>
 </div>
 @endsection
+

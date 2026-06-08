@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+﻿@extends('layouts.admin.app')
 
 @section('title', 'Edit Client')
 
@@ -28,7 +28,7 @@
                 <label class="block text-sm font-medium text-slate-700 mb-1">Logo</label>
                 @if ($client->logo_path)
                     <div class="mb-2">
-                        <img src="{{ asset('storage/' . $client->logo_path) }}" alt="Logo" class="h-16 object-contain rounded-xl border">
+                        <img alt="" ->logo_path) }}" alt="Logo" class="h-16 object-contain rounded-xl border">
                     </div>
                 @endif
                 <input type="file" name="logo" accept="image/*"
@@ -89,3 +89,4 @@
     </form>
 </div>
 @endsection
+

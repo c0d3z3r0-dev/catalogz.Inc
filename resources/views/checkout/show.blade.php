@@ -40,7 +40,7 @@
                                 $imgUrl = $img ? (Str::startsWith($img, 'http') ? $img : secure_asset('storage/' . $img)) : null;
                             @endphp
                             @if ($imgUrl)
-                                <img src="{{ $imgUrl }}" class="h-full w-full object-cover rounded-lg max-w-full">
+                                <img alt="" ">
                             @endif
                         </div>
                         <div>
@@ -121,6 +121,7 @@
     </script>
 </body>
 </html>
+
 
 
 
