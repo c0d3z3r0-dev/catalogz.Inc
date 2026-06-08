@@ -272,14 +272,22 @@
         const btt = document.getElementById('btt');
         window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 300));
 
-        // Typewriter effect
-        const words = ['WhatsApp', 'Facebook', 'Instagram'];
+        // Typewriter effect with colors
+        const words = [
+            { text: 'WhatsApp', color: 'text-green-600' },
+            { text: 'Facebook', color: 'text-blue-600' },
+            { text: 'Instagram', color: 'text-pink-500' }
+        ];
         let wordIndex = 0;
         const typewriter = document.getElementById('typewriter-text');
         setInterval(() => {
             wordIndex = (wordIndex + 1) % words.length;
             typewriter.style.opacity = '0';
-            setTimeout(() => { typewriter.textContent = words[wordIndex]; typewriter.style.opacity = '1'; }, 200);
+            setTimeout(() => {
+                typewriter.textContent = words[wordIndex].text;
+                typewriter.className = words[wordIndex].color + ' transition-colors duration-300';
+                typewriter.style.opacity = '1';
+            }, 200);
         }, 2500);
         typewriter.style.transition = 'opacity 0.2s';
 
