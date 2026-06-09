@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
@@ -63,6 +63,7 @@ Route::prefix('{slug}')->group(function () {
     Route::get('/cart', [CatalogController::class, 'cart'])->name('catalog.cart');
     Route::get('/cart/count', [CatalogController::class, 'cartCount'])->name('catalog.cart.count');
     Route::post('/cart/add', [CatalogController::class, 'addToCart'])->name('catalog.cart.add');
+        Route::post('/cart/add-ajax', [CatalogController::class, 'addToCartAjax'])->name('catalog.cart.add.ajax');
     Route::post('/cart/update', [CatalogController::class, 'updateCart'])->name('catalog.cart.update');
     Route::get('/cart/remove/{productId}', [CatalogController::class, 'removeFromCart'])->name('catalog.cart.remove');
     Route::middleware('throttle:3,1')->post('/checkout', [CheckoutController::class, 'process'])->name('checkout.process');
@@ -87,3 +88,4 @@ Route::prefix('api/v1')->group(function () {
     Route::get('cart/{token}', [\App\Http\Controllers\Api\CartApiController::class, 'show']);
     Route::post('checkout', [\App\Http\Controllers\Api\CheckoutApiController::class, 'process']);
 });
+
