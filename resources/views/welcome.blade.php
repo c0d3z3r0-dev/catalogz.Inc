@@ -117,7 +117,7 @@
             <a href="/apply" class="btn-primary">Get Your Catalog</a>
             <a href="/lusso-boutique" class="btn-secondary">View Demo Store</a>
         </div>
-        <p class="mt-8 text-sm text-gray-500">Already trusted by 15+ businesses</p>
+        <p class="mt-8 text-sm text-gray-500">Already trusted by 15+ businesses · <a href="/catalogs" class="text-green-600 hover:underline font-medium">Browse all catalogs</a></p>
     </section>
 
     <!-- How it works – Carousel -->
