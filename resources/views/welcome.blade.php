@@ -12,7 +12,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
+        body { margin:0; padding:0;
             font-family: 'Inter', sans-serif;
             background-color: #efeae2;
             background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4cdc2' fill-opacity='0.6'%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3Ccircle cx='60' cy='60' r='2'/%3E%3Ccircle cx='40' cy='10' r='1.5'/%3E%3Ccircle cx='10' cy='50' r='1.5'/%3E%3Ccircle cx='70' cy='30' r='1.5'/%3E%3Ccircle cx='30' cy='70' r='1'/%3E%3Ccircle cx='50' cy='40' r='1'/%3E%3Ccircle cx='15' cy='35' r='1'/%3E%3Ccircle cx='65' cy='15' r='1'/%3E%3Ccircle cx='45' cy='55' r='1'/%3E%3C/g%3E%3C/svg%3E");
@@ -92,7 +92,7 @@
 <body class="antialiased">
 
     <!-- Nav -->
-    <nav class="bg-[#1e2a3a] shadow-card sticky top-0 z-30">
+    <nav style="margin-top:0;" class="bg-[#1e2a3a] shadow-card sticky top-0 z-30">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-2xl font-bold tracking-tight">
                 <span class="text-white">Catalog.</span><span class="text-green-400">Inc</span>
@@ -359,6 +359,7 @@
     </script>
 </body>
 </html>
+
 
 
 

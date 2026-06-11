@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -99,22 +99,5 @@ class CatalogController extends Controller
         unset($cart[$productId]);
         session()->put("cart.{$client->id}", $cart);
         return redirect()->route('catalog.cart', $slug)->with('success', 'Item removed.');
-    }
-
-    public function addToCartAjax(Request $request, $slug)
-    {
-        $client = Client::where('slug', $slug)->where('is_active', true)->firstOrFail();
-        $productId = $request->input('product_id');
-        $quantity = (int) $request->input('quantity', 1);
-        $product = $client->products()->findOrFail($productId);
-        $cart = session()->get("cart.{$client->id}", []);
-        if (isset($cart[$productId])) {
-            $cart[$productId] += $quantity;
-        } else {
-            $cart[$productId] = $quantity;
-        }
-        session()->put("cart.{$client->id}", $cart);
-        $count = array_sum($cart);
-        return response()->json(['success' => true, 'cart_count' => $count, 'message' => 'Added to basket']);
     }
 }

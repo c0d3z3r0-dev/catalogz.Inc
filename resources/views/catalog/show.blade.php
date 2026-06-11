@@ -221,7 +221,6 @@
             gap: clamp(12px, 2vw, 24px);
         }
     .shadow-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); } .shadow-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
-input:focus, select:focus, textarea:focus, button:focus { outline: none; ring: 2px solid #0A8F3C; border-color: transparent; }
 </style>
 </head>
 <body class="antialiased">
@@ -230,7 +229,7 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; ring: 2
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 @if($client->logo_path)
-                    <img alt="" ->logo_path) }}" alt="{{ $client->name }}" class="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover flex-shrink-0">
+                    <img src="{{ secure_asset('storage/' . $client->logo_path) }}" alt="{{ $client->name }}" class="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover flex-shrink-0">
                 @endif
                 <div>
                     <h1 class="text-lg sm:text-2xl font-bold text-white truncate">{{ $client->name }}</h1>
@@ -399,8 +398,6 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; ring: 2
     </script>
 </body>
 </html>
-
-
 
 
 
