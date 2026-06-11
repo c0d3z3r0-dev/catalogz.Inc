@@ -1,4 +1,6 @@
 ﻿<?php
+Route::get('/catalogs', [AppHttpControllersCatalogsController::class, 'index'])->name('catalogs.index');
+Route::get('/catalogs', [AppHttpControllersCatalogsController::class, 'index'])->name('catalogs.index');
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
@@ -92,3 +94,4 @@ Route::prefix('api/v1')->group(function () {
 
 // Public Catalog Directory
 Route::get('/catalogs', [App\Http\Controllers\CatalogsController::class, 'index'])->name('catalogs.index');
+Route::get('/catalogs', [App\Http\Controllers\CatalogsController::class, 'index'])-
