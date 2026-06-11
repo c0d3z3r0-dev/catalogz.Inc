@@ -28,7 +28,7 @@
     </style>
 </head>
 <body>
-    <header class="top-bar shadow-card p-4 sticky top-0 z-30">
+    <header class="top-bar shadow-card p-4 fixed top-0 left-0 right-0 z-50 z-30">
         <div class="max-w-3xl mx-auto flex items-center justify-between">
             <h1 class="text-lg sm:text-xl font-bold text-white">
                 Basket <span class="text-white/70 text-sm font-normal">({{ count($items) }} item{{ count($items) !== 1 ? 's' : '' }})</span>
@@ -36,7 +36,7 @@
             <a href="{{ route('catalog.show', $client->slug) }}" class="text-white/80 hover:text-white underline text-sm">Continue Shopping</a>
         </div>
     </header>
-    <main class="max-w-3xl mx-auto px-4 py-8">
+    <main class="max-w-3xl mx-auto px-4 py-8 pt-20 sm:pt-24">
         @if (session('success'))
             <div class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-xl mb-6">{{ session('success') }}</div>
         @endif
@@ -147,6 +147,7 @@
     </script>
 </body>
 </html>
+
 
 
 

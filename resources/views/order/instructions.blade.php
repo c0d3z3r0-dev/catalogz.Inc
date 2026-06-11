@@ -87,14 +87,14 @@
 </head>
 <body>
 
-    <header class="bg-[#0A8F3C] shadow-card p-4 sticky top-0 z-30">
+    <header class="bg-[#0A8F3C] shadow-card p-4 fixed top-0 left-0 right-0 z-50 z-30">
         <div class="max-w-2xl mx-auto flex items-center justify-between">
             <h1 class="text-lg sm:text-xl font-bold text-white">{{ $order->client->name }} – Order #{{ $order->id }}</h1>
             <span class="status-badge bg-yellow-100 text-yellow-800">Pending Payment</span>
         </div>
     </header>
 
-    <main class="max-w-2xl mx-auto px-4 py-6 sm:py-8">
+    <main class="max-w-2xl mx-auto px-4 py-6 sm:py-8 pt-20 sm:pt-24">
 
         {{-- Order Summary --}}
         <div class="card-float p-4 sm:p-6 mb-6">
@@ -242,6 +242,7 @@
     </script>
 </body>
 </html>
+
 
 
 

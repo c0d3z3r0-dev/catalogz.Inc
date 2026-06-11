@@ -27,7 +27,7 @@
             <h1 class="text-xl font-bold text-white">{{ $client->name }} – Checkout</h1>
         </div>
     </header>
-    <main class="max-w-2xl mx-auto px-4 py-8">
+    <main class="max-w-2xl mx-auto px-4 py-8 pt-20 sm:pt-24">
         <div class="card-float p-6 mb-6">
             <h2 class="font-semibold text-lg mb-4">Order Summary</h2>
             <table class="w-full overflow-x-auto" class="w-full text-sm">
@@ -121,6 +121,7 @@
     </script>
 </body>
 </html>
+
 
 
 

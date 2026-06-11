@@ -17,7 +17,7 @@
     <header class="bg-white shadow-card p-4">
         <h1 class="text-xl font-bold text-slate-800">Order #{{ $order->id }}</h1>
     </header>
-    <main class="p-6 max-w-2xl mx-auto">
+    <main class="p-6 max-w-2xl mx-auto pt-20 sm:pt-24">
         <div id="loading" class="text-center py-10">
             <div class="spinner mx-auto mb-4"></div>
             <p class="text-slate-600">Waiting for payment confirmation...</p>
@@ -88,6 +88,7 @@
     </script>
 </body>
 </html>
+
 
 
 
