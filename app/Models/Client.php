@@ -10,6 +10,7 @@ class Client extends Model
     protected $fillable = [
         'name', 'slug', 'whatsapp_number', 'email', 'logo_path', 'primary_color',
         'is_active', 'address', 'city', 'contact_email', 'background_color',
+        'category',
         'font_family', 'custom_css', 'api_token', 'merchant_token',
     ];
 

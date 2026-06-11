@@ -89,3 +89,6 @@ Route::prefix('api/v1')->group(function () {
     Route::post('checkout', [\App\Http\Controllers\Api\CheckoutApiController::class, 'process']);
 });
 
+
+// Public Catalog Directory
+Route::get('/catalogs', [App\Http\Controllers\CatalogsController::class, 'index'])->name('catalogs.index');
