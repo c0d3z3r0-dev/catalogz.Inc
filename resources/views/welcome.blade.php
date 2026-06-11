@@ -92,17 +92,17 @@
 <body class="antialiased">
 
     <!-- Nav -->
-    <nav style="margin-top:0;" class="bg-[#1e2a3a] shadow-card sticky top-0 z-30">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl font-bold tracking-tight">
-                <span class="text-white">Catalog.</span><span class="text-green-400">Inc</span>
-            </span>
-            <a href="/login" class="text-sm text-gray-300 hover:text-white font-medium transition">Admin Login</a>
-        </div>
-    </nav>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1e2a3a] shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <span class="text-2xl font-bold tracking-tight">
+            <span class="text-white">Catalog.</span><span class="text-green-400">Inc</span>
+        </span>
+        <a href="/login" class="text-sm text-gray-300 hover:text-white font-medium transition">Admin Login</a>
+    </div>
+</nav>
 
     <!-- Hero -->
-    <section class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center relative">
+    `<section class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center relative" style="padding-top:80px;">
         <!-- Floating illustration (lightweight CSS shape) -->
         <div class="absolute top-10 left-10 w-24 h-24 bg-green-200 rounded-full opacity-20 blur-xl hidden md:block"></div>
         <div class="absolute bottom-20 right-10 w-32 h-32 bg-green-300 rounded-full opacity-20 blur-xl hidden md:block"></div>
@@ -170,7 +170,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+    `<section class="max-w-5xl mx-auto px-6 py-12 md:py-16" style="padding-top:80px;">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">What our clients say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-2xl shadow-card text-center border border-gray-100">
@@ -359,6 +359,7 @@
     </script>
 </body>
 </html>
+
 
 
 
